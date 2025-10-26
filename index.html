@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Ejercicios</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #ff6b6b;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            width: 100%;
+            max-width: 1000px;
+        }
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 20px;
+            font-weight: bold;
+            color: #ff6b6b;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+            background: #ffeaa7;
+        }
+        .card span {
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #636e72;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>📚 Menú de Ejercicios Async</h1>
+        <div class="menu">
+            <div class="card" onclick="location.href='ejercicio1_async.html'">
+                Ejercicio 1
+                <span>Uso de async/await</span>
+            </div>
+            <div class="card" onclick="location.href='ejercicio2_async.html'">
+                Ejercicio 2
+                <span>Fetch de datos</span>
+            </div>
+            <div class="card" onclick="location.href='ejercicio3_async.html'">
+                Ejercicio 3
+                <span>Galería de Gatitos</span>
+            </div>
+            <div class="card" onclick="location.href='ejercicio4_async.html'">
+                Ejercicio 4
+                <span>Otro ejemplo</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
